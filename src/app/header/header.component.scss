@@ -1,0 +1,26 @@
+@import '../../scss/vars.scss';
+
+.header {
+  box-shadow: 1px 1px 4px $color-gold;
+  color: $color-gold;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__link {
+    color: $color-gold;
+  }
+
+  &__curr {
+    margin-right: 20px;
+  }
+}

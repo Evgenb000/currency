@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import './scss/vars.scss';
+@import './scss/extends.scss';
+@import './scss/resets.scss';
+@import './scss/blocks/container.scss';
+@import './scss/blocks/content.scss';
+@import './scss/blocks/currency.scss';
+@import './scss/blocks/logo.scss';

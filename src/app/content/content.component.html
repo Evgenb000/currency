@@ -1,0 +1,61 @@
+<main class="content">
+  <div class="container">
+    <div class="content__container">
+      <div class="content__convert">
+        <label
+          for="amount"
+          class="content__label"
+          (change)="changeBase(c1, c2, c4)"
+        >
+          <input
+            type="text"
+            class="content__input"
+            value='0'
+            #c3
+            (change)="changeMultiplier(c3)"
+          >
+
+          <select
+            name="currency"
+            id="currencyFirst"
+            class="content__curr"
+            #c1
+          >
+            <option class="content__options" value="UAH">UAH</option>
+            <option class="content__options" value="USD">USD</option>
+            <option class="content__options" value="EUR">EUR</option>
+          </select>
+        </label>
+          to
+        <label
+          for="amount"
+          class="content__label"
+          (change)="changeBase(c2, c1, c3)"
+          >
+          <input
+            type="text"
+            class="content__input"
+            value='0'
+            #c4
+            (change)="changeMultiplier(c4)"
+          >
+
+          <select
+            name="currency"
+            id="currencySecond"
+            class="content__curr"
+            #c2
+          >
+            <option class="content__options" value="UAH">UAH</option>
+            <option class="content__options" value="USD" selected>USD</option>
+            <option class="content__options" value="EUR">EUR</option>
+          </select>
+        </label>
+      </div>
+        Tap 'Enter' or on the button
+      <button class="content__submit" (click)="convert()">
+        Convert
+      </button>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,10 @@
+@import '../mixins.scss';
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include OnMobile {
+    max-width: 440px;
+  }
+}

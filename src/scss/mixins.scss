@@ -1,0 +1,5 @@
+@mixin OnMobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}

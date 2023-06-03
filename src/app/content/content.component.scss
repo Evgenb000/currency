@@ -1,0 +1,105 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/vars.scss';
+
+.content {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    background-color: $color-dark;
+    border: 2px solid $color-gold;
+    box-shadow: 2px 2px 2px $color-gold;
+    border-radius: 24px;
+
+    width: 440px;
+    height: 124px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    @include OnMobile {
+      width: 320px;
+    }
+  }
+
+  &__convert {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__input {
+    width: 80px;
+    height: 24px;
+    border-radius: 24px 0 0 24px;
+    padding-left: 12px;
+    border: 0;
+    transition: box-shadow 0.3s ease;
+    color: $color-gold;
+    margin-left: 8px;
+
+    @include OnMobile {
+      width: 40px;
+    }
+
+    &::placeholder {
+      padding-left: 12px;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      box-shadow: 1px 1px 4px $color-gold;
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 4px $color-gold;
+    }
+  }
+
+  &__curr {
+    width: 80px;
+    height: 26px;
+    border-radius: 0 24px 0 0;
+    transition: box-shadow 0.3s ease,
+      border-radius 0.3s ease;
+    padding-left: 8px;
+    margin-right: 8px;
+    color: $color-gold;
+    border: 0;
+
+    @include OnMobile {
+      width: 52px;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      box-shadow: 1px 1px 4px $color-gold;
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 4px $color-gold;
+    }
+  }
+
+  &__options {
+    color: $color-gold;
+  }
+
+  &__submit {
+    border: 0;
+    width: 120px;
+    height: 28px;
+    border-radius: 24px;
+    color: $color-gold;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 4px $color-gold;
+    }
+  }
+}

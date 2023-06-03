@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"
+            *ngFor="let nav of navigations"
+          >
+            <a class="header__link" href="/{{nav}}">{{nav}}</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__curr currency">
+        <a href="/home" class="header__logo-link logo-link">
+          <img
+            src="../assets/logo.jpg"
+            alt="logo"
+            class="currency__logo logo"
+          >
+          Currency
+        </a>
+
+        <div class="currency__uahto">
+          <div class="currency__usd">1 USD = {{resultUsd}} UAH</div>
+          <div class="currency__eur">1 EUR = {{resultEur}} UAH</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
